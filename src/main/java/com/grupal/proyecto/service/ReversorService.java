@@ -9,5 +9,9 @@ public class ReversorService implements IReversorService {
     public String reversar(String texto) {
         return new StringBuilder(texto).reverse().toString();
     }
-}
 
+    @Override
+    public String desreversar(String texto) {
+        return new StringBuilder(texto).reverse().toString();
+    }
+}

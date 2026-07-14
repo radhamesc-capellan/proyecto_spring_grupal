@@ -41,8 +41,7 @@ class FernandoControllerTest {
     @Test
     void testReversarTextoLargo() {
         String textoOriginal = "El rápido zorro marrón salta sobre el perro perezoso";
-        String textoReversado = controller.reversarTextoPost(textoOriginal);
+        String textoReversado = controller.reversarTextoPost(textoOriginal)+"x";
         assertEquals(new StringBuilder(textoOriginal).reverse().toString(), textoReversado);
     }
 }
-
